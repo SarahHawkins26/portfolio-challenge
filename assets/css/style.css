@@ -1,0 +1,128 @@
+:root {
+	--base-color: #F8F9EF;
+	--green: #42904F;
+	--cream: #D7DABC;
+	--text-color: #9AD67B;
+}
+* {
+	box-sizing: border-box;
+	padding: 5px;
+	margin: 5px;
+}
+
+body {
+	background-color: var(--base-color);
+}
+
+header {
+	padding: 20px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	background-color: var(--green);
+	color: var(--cream);
+}
+
+header nav {
+	padding-top: 15px;
+	margin-right: 20px;
+	float: right;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+}
+
+header nav a {
+	display: inline-block;
+	margin-left: 25px;
+	list-style-type: none;
+}
+div img {
+	max-width: 200px;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 48px;
+}
+
+h2 {
+	display: inline-block;
+	color: var(--text-color);
+}
+
+a {
+    color: #2C7E14;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.band {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1;
+	grid-gap: 30px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+.card {
+	background: var(--base-color);
+	text-decoration: none;
+	color: var(--text-color);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	display: inline-flexbox;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+  }
+
+.card:hover {
+	top: -2px;
+	box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+
+  @media screen and (max-width: 992px) {
+	.band {
+		grid-template-columns: 1 1;
+	}
+}
+@media screen and (max-width: 768px) {
+	.band {
+		grid-template-columns: 1 1 1 1;
+	}
+}
+
+nav-img{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding-top:20%;
+}
+img{
+    transition: transform .2s;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    border-radius: 10px;
+   
+}
+img:hover{
+    transform:scale(2.5);
+}

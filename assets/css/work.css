@@ -1,0 +1,24 @@
+:root {
+	--base-color: #F8F9EF;
+	--green: #42904F;
+	--cream: #D7DABC;
+	--text-color: #9AD67B;
+}
+.work {
+    margin: 20px;
+    padding: 25px;
+    height: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--cream);
+    color: var(--green);
+}
+.work img {
+    display: flex;
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+.work h2 {
+    margin-top: 25px;
+    font-size: 45;
+}
